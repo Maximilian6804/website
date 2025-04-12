@@ -1,0 +1,100 @@
+/* Allgemeine Stile */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000000; /* Hintergrundfarbe */
+}
+
+/* Wrapper für das Login-Formular */
+.login-wrapper {
+    display: flex;
+    justify-content: center; /* Zentriert das Login-Container */
+    align-items: center; /* Zentriert vertikal */
+    height: 100vh; /* Höhe des Viewports */
+}
+
+/* Container für das Login-Formular */
+.login-container {
+    background-color: #1e1e1e; /* Hintergrundfarbe des Containers */
+    padding: 40px; /* Polsterung */
+    border-radius: 10px; /* Abgerundete Ecken */
+    box-shadow: 0 0 15px 5px rgba(128, 0, 128, 0.8); /* Violette Schattierung */
+    width: 350px; /* Breite des Containers */
+    max-width: 90%; /* Maximalbreite */
+    text-align: center; /* Text zentriert */
+    border: 1px solid rgba(128, 0, 128, 0.5); /* Schattierung um den Container */
+}
+
+/* Titel */
+h2 {
+    margin-bottom: 20px; /* Abstand nach unten */
+    color: #ffffff; /* Schriftfarbe */
+}
+
+/* Eingabefelder */
+input {
+    width: 90%; /* Reduzierte Breite für kleinere Felder */
+    padding: 15px; /* Polsterung verringert */
+    margin: 10px 0; /* Abstand zwischen den Feldern */
+    border: none; /* Keine Umrandung */
+    border-radius: 5px; /* Abgerundete Ecken */
+    background-color: #3e3e3e; /* Hintergrundfarbe */
+    color: #ffffff; /* Schriftfarbe */
+    font-size: 16px; /* Etwas kleinere Schriftgröße */
+    box-sizing: border-box;
+}
+
+/* Button */
+button {
+    width: 100%; /* Volle Breite des Buttons */
+    padding: 12px; /* Polsterung */
+    margin-top: 20px; /* Abstand nach oben */
+    border: none; /* Keine Umrandung */
+    border-radius: 5px; /* Abgerundete Ecken */
+    background-color: #800080; /* Violette Hintergrundfarbe */
+    color: #ffffff; /* Schriftfarbe */
+    font-size: 16px; /* Schriftgröße */
+    font-weight: bold;
+    cursor: pointer; /* Zeiger-Cursor */
+    transition: background-color 0.3s ease; /* Übergangseffekt */
+}
+
+/* Hover-Effekt für den Button */
+button:hover {
+    background-color: #9932CC; /* Hellere Violettfarbe beim Hover */
+}
+
+/* Link zum Registrieren */
+p {
+    margin-top: 15px; /* Abstand oben */
+    color: #ffffff; /* Schriftfarbe */
+}
+/* Text für die Links (Login/Registrieren) */
+a {
+    color: #a020f0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Home-Button */
+.home-button {
+    display: inline-block; /* Inline-Block für den Button */
+    padding: 10px 20px; /* Polsterung */
+    margin-top: 10px; /* Abstand nach oben */
+    border-radius: 5px; /* Abgerundete Ecken */
+    background-color: #800080; /* Violette Hintergrundfarbe */
+    color: #ffffff; /* Schriftfarbe */
+    text-align: center; /* Text zentriert */
+    text-decoration: none; /* Keine Unterstreichung */
+    transition: background-color 0.3s ease; /* Übergangseffekt */
+}
+
+/* Hover-Effekt für den Home-Button */
+.home-button:hover {
+    background-color: #9932CC; /* Hellere Violettfarbe beim Hover */
+}

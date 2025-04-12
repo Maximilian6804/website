@@ -1,0 +1,92 @@
+/* Allgemeiner Stil für den Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container für das gesamte Formular und Inhalte */
+.form-container {
+    background-color: #242424;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 5px rgba(128, 0, 128, 0.8); /* Lila Schatten hinzugefügt */
+    padding: 40px;
+    width: 350px;
+    text-align: center;
+    position: relative;
+    top: -20px; /* Hebt die Box leicht an */
+    border: 1px solid rgba(128, 0, 128, 0.5); 
+}
+
+/* Input-Felder */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 24px); /* Breite bleibt unverändert */
+    padding: 15px; /* Größere Eingabeflächen */
+    margin: 10px 0; /* Etwas mehr Abstand zwischen den Feldern */
+    border: none;
+    border-radius: 5px;
+    background-color: #3e3e3e;
+    color: #ffffff;
+    font-size: 16px; /* Größere Schrift */
+    box-sizing: border-box;
+}
+
+/* Submit-Button */
+button[type="submit"] {
+    width: 100%;
+    padding: 15px; /* Größerer Button */
+    border: none;
+    border-radius: 5px;
+    background-color: #800080;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: #a020f0;
+}
+
+/* Text für die Links (Login/Registrieren) */
+a {
+    color: #a020f0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Home-Button */
+.home-button {
+    display: inline-block; /* Inline-Block für den Button */
+    padding: 10px 20px; /* Polsterung */
+    margin-top: 10px; /* Abstand nach oben */
+    border-radius: 5px; /* Abgerundete Ecken */
+    background-color: #800080; /* Violette Hintergrundfarbe */
+    color: #ffffff; /* Schriftfarbe */
+    text-align: center; /* Text zentriert */
+    text-decoration: none; /* Keine Unterstreichung */
+    transition: background-color 0.3s ease; /* Übergangseffekt */
+}
+
+/* Hover-Effekt für den Home-Button */
+.home-button:hover {
+    background-color: #9932CC; /* Hellere Violettfarbe beim Hover */
+}
+
+/* Hinweis: Login/Registrierung-Link */
+p {
+    margin-top: 20px;
+}

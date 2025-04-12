@@ -1,0 +1,231 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    padding: 40px 20px; /* Increased top and bottom padding */
+    justify-content: center; /* Center the content horizontally */
+    align-items: flex-start; /* Align items to the top */
+}
+
+.profile-sidebar {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    width: 220px; /* Width of sidebar */
+    padding: 20px;
+    box-shadow: 0 0 15px 5px rgba(128, 0, 128, 0.8); /* Purple glowing outline */
+    border-radius: 10px;
+    margin-right: 50px; /* Space between sidebar and main content */
+    margin-top: 20px; /* Adjusted top margin for alignment */
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 120px; /* Size of profile picture */
+    height: 120px; /* Size of profile picture */
+    object-fit: cover; /* Ensures picture fits well */
+}
+
+.subtitle {
+    font-style: italic;
+    color: #aaaaaa;
+}
+
+.contact-info {
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+.content {
+    flex: 1;
+    max-width: 800px; /* Limit the width of the central content */
+    padding: 20px;
+    background-color: #1e1e1e; 
+    color: #ffffff;
+    border-radius: 15px; /* Rounded corners for the central column */
+    box-shadow: 0 0 15px 5px rgba(128, 0, 128, 0.8); /* Purple glowing outline */
+    margin-top: 20px; /* Space above the content area */
+}
+
+header {
+    background-color: #272727;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.tech-stack i {
+    font-size: 1.2em; /* Icon size */
+    margin: 8px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.project img {
+    width: 60%; /* Reduced width */
+    max-width: 150px; /* Further reduced max width */
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+header nav ul li a[href*="#about"] {
+    color: #800080; 
+}
+
+/* Basic styles for PC screens remain unchanged */
+
+/* Media Queries for Smartphones and Tablets */
+@media (max-width: 768px) {
+    .container {
+        display: block;
+        padding: 0 20px; /* Add padding for better spacing on mobile devices */
+    }
+
+    .profile-sidebar {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .profile-pic {
+        width: 150px;
+        height: auto;
+    }
+
+    .profile-sidebar h1 {
+        font-size: 1.8em;
+    }
+
+    .contact-info {
+        font-size: 1em;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        z-index: 10; /* Ensure the navigation stays on top */
+    }
+
+    nav ul li {
+        margin: 15px 0;
+        list-style: none;
+    }
+
+    nav ul li a {
+        font-size: 1.2em;
+        padding: 10px;
+        display: block;
+        z-index: 11;
+    }
+
+    .profile-sidebar {
+        z-index: 5; /* Move profile sidebar back */
+    }
+
+    .content {
+        position: relative;
+        z-index: 1;
+    }
+
+    .tech-stack i {
+        font-size: 1.5em;
+        margin: 0 10px;
+    }
+
+    .work-item, .project {
+        margin-bottom: 20px;
+    }
+
+    .project img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* User box at the top right */
+.user-box {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.user-button {
+    background-color: #800080; /* Purple background */
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.user-button:hover {
+    background-color: #9932CC; /* Lighter purple on hover */
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #1e1e1e;
+    border: 1px solid #800080;
+    border-radius: 5px;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.dropdown-menu a {
+    display: block;
+    color: #ffffff;
+    padding: 12px;
+    text-decoration: none;
+    text-align: left;
+    font-size: 14px;
+}
+
+.dropdown-menu a:hover {
+    background-color: #800080;
+}
+
+/* Show dropdown menu on hover */
+.user-box:hover .dropdown-menu {
+    display: block;
+}
